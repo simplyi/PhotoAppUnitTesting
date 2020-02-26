@@ -1,15 +1,15 @@
 //
-//  SignupFormModelTests.swift
+//  SignupFormModelValidator.swift
 //  PhotoAppTests
 //
-//  Created by Sergey Kargopolov on 2020-02-25.
+//  Created by Sergey Kargopolov on 2020-02-26.
 //  Copyright © 2020 Sergey Kargopolov. All rights reserved.
 //
 
 import XCTest
 @testable import PhotoApp
 
-class SignupFormModelTests: XCTestCase {
+class SignupFormModelValidatorTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,17 +20,15 @@ class SignupFormModelTests: XCTestCase {
     }
 
 
-    
-    func testSignupFormValidator_WhenValidFirstNameProvided_ShouldReturnTrue() {
+    func testSignFormModelValidator_WhenValidFirstNameProvided_ShouldReturnTrue() {
+        
         // Arrange
         let sut = SignupFormModelValidator()
         
         // Act
-        let isFirstNameValid = sut.isFirstNameValid(firstName:"Sergey")
+        let isFirstNameValid = sut.isFirstNameValid(firstName: "Sergey")
         
         // Assert
-        XCTAssertTrue(isFirstNameValid, "The isFirstNameValid() should have returned TRUE for a valid firstName but returned FALSE")
-        
+        XCTAssertTrue(isFirstNameValid, "The isFirstNameValid() should have returned TRUE for a valid first name but returned FALSE")
     }
-    
 }
