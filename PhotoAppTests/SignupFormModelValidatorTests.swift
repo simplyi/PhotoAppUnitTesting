@@ -70,8 +70,15 @@ class SignupFormModelValidatorTests: XCTestCase {
         let isLastNameValid = sut.isLastNameValid(lastName: "K")
         
         // Assert
-        XCTAssertFalse(isLastNameValid, "The isLastNameValid() should have returned FALSE for a first name that is shorter than \(SignupConstants.lastNameMinLength) characters but it has returned TRUE")
+        XCTAssertFalse(isLastNameValid, "The isLastNameValid() should have returned FALSE for a last name that is shorter than \(SignupConstants.lastNameMinLength) characters but it has returned TRUE")
         
+    }
+    
+    func testSignupFormModelValidator_WhenTooLongLastNameProvided_ShouldReturnFalse() {
+        
+        let isLastNameValid = sut.isLastNameValid(lastName: "KargopolovKargopolov")
+        
+        XCTAssertFalse(isLastNameValid, "The isLastNameValid() should have returned FALSE for a last name that is longer than \(SignupConstants.lastNameMaxLength) characters but it has returned TRUE")
     }
     
 }
