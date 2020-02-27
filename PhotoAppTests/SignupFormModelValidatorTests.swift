@@ -88,4 +88,10 @@ class SignupFormModelValidatorTests: XCTestCase {
         XCTAssertTrue(isValidEmailFormat, "Provided valid email address format but validation did not pass")
     }
     
+    func testSignupFormModelValidator_WhenInValidEmailProvided_ShouldReturnFalse() {
+        let isValidEmailFormat = sut.isValidEmailFormat(email: "test@test")
+        
+        XCTAssertFalse(isValidEmailFormat, "Provided invalid email address format but validation still passed")
+    }
+    
 }
