@@ -129,6 +129,15 @@ class SignupFormModelValidatorTests: XCTestCase {
         // Act
         let doPasswordsMatch = sut.doPasswordsMatch(password: "12345678", repeatPassword:"12345678")
         
+        // Assert
         XCTAssertTrue(doPasswordsMatch, "The doPasswordsMatch() should have returned TRUE for matching passwords but it has returned FALSE")
+    }
+    
+    func testSignupFormModelValidator_WhenNotMatchingPasswordsProvided_ShouldReturnFalse() {
+        // Act
+        let doPasswordsMatch = sut.doPasswordsMatch(password: "12345678", repeatPassword: "1234678")
+        
+        // Assert
+        XCTAssertFalse(doPasswordsMatch, "The doPasswordsMatch() should have returned FALSE for passwords that do not match but it has returned TRUE")
     }
 }
