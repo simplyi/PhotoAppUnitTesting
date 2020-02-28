@@ -13,4 +13,6 @@ struct SignupConstants {
     static let firstNameMaxLength = 10
     static let lastNameMinLength = 2
     static let lastNameMaxLength = 12
+    static let passwordMinLength = 8
+    static let passwordMaxLength = 16
 }
