@@ -124,4 +124,11 @@ class SignupFormModelValidatorTests: XCTestCase {
         XCTAssertFalse(isPasswordValid, "The isPasswordValid() should have returned FALSE for a password that is longer than \(SignupConstants.passwordMaxLength) but it has returned TRUE")
         
     }
+    
+    func testSignupFormModelValidator_WhenEqualPasswordsProvided_ShouldReturnTrue() {
+        // Act
+        let doPasswordsMatch = sut.doPasswordsMatch(password: "12345678", repeatPassword:"12345678")
+        
+        XCTAssertTrue(doPasswordsMatch, "The doPasswordsMatch() should have returned TRUE for matching passwords but it has returned FALSE")
+    }
 }
