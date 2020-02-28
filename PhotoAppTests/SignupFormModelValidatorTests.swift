@@ -94,4 +94,14 @@ class SignupFormModelValidatorTests: XCTestCase {
         XCTAssertFalse(isValidEmailFormat, "Provided invalid email address format but validation still passed")
     }
     
+    // MARK: Password Validation
+    func testSignupFormModelValidator_WhenValidPasswordProvided_ShouldReturnTrue() {
+        
+        // Act
+        let isPasswordValid = sut.isPasswordValid(password: "12345678")
+        
+        // Assert
+        XCTAssertTrue(isPasswordValid, "The isPasswordValid() should have returned TRUE for a valid password  but it has returned FALSE")
+        
+    }
 }
