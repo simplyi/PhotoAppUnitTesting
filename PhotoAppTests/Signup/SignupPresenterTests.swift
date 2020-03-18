@@ -27,8 +27,10 @@ class SignupPresenterTests: XCTestCase {
                                               email: "test@test.com",
                                               password:"12345678",
                                               repeatPassword:"12345678")
+        let sut = SignupPresenter()
         
         // Act
+        sut.processUserSignup(formModel: signupFormModel)
         
         // Assert
     }

@@ -24,6 +24,7 @@
 		9490D3DF23F3015A00ABE2F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9490D3DD23F3015A00ABE2F9 /* LaunchScreen.storyboard */; };
 		94BC48A22422BFE70072232B /* SignupPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC48A12422BFE70072232B /* SignupPresenterTests.swift */; };
 		94BC48A82422CFE10072232B /* SignupFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC48A72422CFE10072232B /* SignupFormModel.swift */; };
+		94BC48AA2422D9A90072232B /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC48A92422D9A90072232B /* SignupPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		9490D3EB23F3015A00ABE2F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94BC48A12422BFE70072232B /* SignupPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterTests.swift; sourceTree = "<group>"; };
 		94BC48A72422CFE10072232B /* SignupFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModel.swift; sourceTree = "<group>"; };
+		94BC48A92422D9A90072232B /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				945F9B0F2412B26500E4699F /* Network */,
 				945F9B0E2412B1F100E4699F /* Controllers */,
 				945F9B0D2412B1B300E4699F /* Models */,
+				94BC48A92422D9A90072232B /* SignupPresenter.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94BC48AA2422D9A90072232B /* SignupPresenter.swift in Sources */,
 				9490D3D723F3015900ABE2F9 /* ViewController.swift in Sources */,
 				9490D3D323F3015900ABE2F9 /* AppDelegate.swift in Sources */,
 				945F9B062411A73B00E4699F /* SignupResponseModel.swift in Sources */,
