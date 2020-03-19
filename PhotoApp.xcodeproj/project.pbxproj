@@ -26,6 +26,7 @@
 		94BC48A82422CFE10072232B /* SignupFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC48A72422CFE10072232B /* SignupFormModel.swift */; };
 		94BC48AA2422D9A90072232B /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC48A92422D9A90072232B /* SignupPresenter.swift */; };
 		94BC48AC2422E06B0072232B /* MockSignupModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC48AB2422E06A0072232B /* MockSignupModelValidator.swift */; };
+		94BC48AE2423B9270072232B /* SignupModelValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC48AD2423B9270072232B /* SignupModelValidatorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		94BC48A72422CFE10072232B /* SignupFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModel.swift; sourceTree = "<group>"; };
 		94BC48A92422D9A90072232B /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
 		94BC48AB2422E06A0072232B /* MockSignupModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupModelValidator.swift; sourceTree = "<group>"; };
+		94BC48AD2423B9270072232B /* SignupModelValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModelValidatorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				9490D3DB23F3015A00ABE2F9 /* Assets.xcassets */,
 				9490D3DD23F3015A00ABE2F9 /* LaunchScreen.storyboard */,
 				9490D3E023F3015A00ABE2F9 /* Info.plist */,
+				94BC48AD2423B9270072232B /* SignupModelValidatorProtocol.swift */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				945F9B082411A96700E4699F /* SignupError.swift in Sources */,
 				94BC48A82422CFE10072232B /* SignupFormModel.swift in Sources */,
 				94064F392406EC480093172D /* SignupConstants.swift in Sources */,
+				94BC48AE2423B9270072232B /* SignupModelValidatorProtocol.swift in Sources */,
 				945F9B042411477100E4699F /* SignupFormRequestModel.swift in Sources */,
 				9471F55F2410089F0003BD16 /* SignupWebService.swift in Sources */,
 				9490D3D523F3015900ABE2F9 /* SceneDelegate.swift in Sources */,
