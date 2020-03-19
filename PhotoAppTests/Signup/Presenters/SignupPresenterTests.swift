@@ -28,14 +28,17 @@ class SignupPresenterTests: XCTestCase {
                                               password:"12345678",
                                               repeatPassword:"12345678")
         let mockSignupModelValidator = MockSignupModelValidator()
-        
-        let sut = SignupPresenter()
+        let sut = SignupPresenter(formModelValidator: mockSignupModelValidator)
         
         // Act
         sut.processUserSignup(formModel: signupFormModel)
         
         // Assert
-        XCTAssertTrue(mockSignupModelValidator.isFirstNameValidated)
+        XCTAssertTrue(mockSignupModelValidator.isFirstNameValidated,"First name was not validated")
+        XCTAssertTrue(mockSignupModelValidator.isLastNameValidated, "Last name was not validated")
+        XCTAssertTrue(mockSignupModelValidator.isEmailFormatValidated, "Email format was not validated")
+        XCTAssertTrue(mockSignupModelValidator.isPasswordValidated, "Password was not validated")
+        XCTAssertTrue(mockSignupModelValidator.isPasswordEqualityValidated, "Did not validate if passwords match")
         
     }
 }

@@ -87,10 +87,11 @@
 		945F9B0C2412B18500E4699F /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				94BC48B02424058A0072232B /* Protocols */,
+				94BC48AF242405030072232B /* Presenters */,
 				945F9B0F2412B26500E4699F /* Network */,
 				945F9B0E2412B1F100E4699F /* Controllers */,
 				945F9B0D2412B1B300E4699F /* Models */,
-				94BC48A92422D9A90072232B /* SignupPresenter.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -127,11 +128,10 @@
 		945F9B102412BDC100E4699F /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				94BC48B3242407F00072232B /* Mocks */,
+				94BC48B2242407C50072232B /* Presenters */,
 				945F9B122412BDDE00E4699F /* Network */,
 				945F9B112412BDD800E4699F /* Models */,
-				945F9B1524183F4400E4699F /* MockURLProtocol.swift */,
-				94BC48A12422BFE70072232B /* SignupPresenterTests.swift */,
-				94BC48AB2422E06A0072232B /* MockSignupModelValidator.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -180,7 +180,6 @@
 				9490D3DB23F3015A00ABE2F9 /* Assets.xcassets */,
 				9490D3DD23F3015A00ABE2F9 /* LaunchScreen.storyboard */,
 				9490D3E023F3015A00ABE2F9 /* Info.plist */,
-				94BC48AD2423B9270072232B /* SignupModelValidatorProtocol.swift */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -192,6 +191,39 @@
 				9490D3EB23F3015A00ABE2F9 /* Info.plist */,
 			);
 			path = PhotoAppTests;
+			sourceTree = "<group>";
+		};
+		94BC48AF242405030072232B /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				94BC48A92422D9A90072232B /* SignupPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		94BC48B02424058A0072232B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				94BC48AD2423B9270072232B /* SignupModelValidatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		94BC48B2242407C50072232B /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				94BC48A12422BFE70072232B /* SignupPresenterTests.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		94BC48B3242407F00072232B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				945F9B1524183F4400E4699F /* MockURLProtocol.swift */,
+				94BC48AB2422E06A0072232B /* MockSignupModelValidator.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
