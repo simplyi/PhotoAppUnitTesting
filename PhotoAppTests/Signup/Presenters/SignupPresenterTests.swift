@@ -10,25 +10,35 @@ import XCTest
 @testable import PhotoApp
 
 class SignupPresenterTests: XCTestCase {
+    
+    var signupFormModel: SignupFormModel!
+    var mockSignupModelValidator: MockSignupModelValidator!
+    var mockSignupWebService: MockSignupWebService!
+    var sut: SignupPresenter!
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        signupFormModel = SignupFormModel(firstName: "Sergey",
+                                              lastName: "Kargopolov",
+                                              email: "test@test.com",
+                                              password:"12345678",
+                                              repeatPassword:"12345678")
+        mockSignupModelValidator = MockSignupModelValidator()
+        mockSignupWebService = MockSignupWebService()
+        sut = SignupPresenter(formModelValidator: mockSignupModelValidator, webservice: mockSignupWebService)
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        signupFormModel = nil
+        mockSignupModelValidator = nil
+        mockSignupWebService = nil
+        sut = nil
     }
 
     
     func testSignupPresenter_WhenInformationProvided_WillValidateEachProperty() {
         // Arrange
-        let signupFormModel = SignupFormModel(firstName: "Sergey",
-                                              lastName: "Kargopolov",
-                                              email: "test@test.com",
-                                              password:"12345678",
-                                              repeatPassword:"12345678")
-        let mockSignupModelValidator = MockSignupModelValidator()
-        let sut = SignupPresenter(formModelValidator: mockSignupModelValidator)
         
         // Act
         sut.processUserSignup(formModel: signupFormModel)
@@ -44,18 +54,8 @@ class SignupPresenterTests: XCTestCase {
     
     func testSignupPresenter_WhenGivenValidFormModel_ShouldCallSignupMethod() {
         // Arrange
-        let signupFormModel = SignupFormModel(firstName: "Sergey",
-                                              lastName: "Kargopolov",
-                                              email: "test@test.com",
-                                              password:"12345678",
-                                              repeatPassword:"12345678")
-        
-        let mockSignupModelValidator = MockSignupModelValidator()
-        
-        let mockSignupWebService = MockSignupWebService()
-        
+
         // Act
-        let sut = SignupPresenter(formModelValidator: mockSignupModelValidator)
         sut.processUserSignup(formModel: signupFormModel)
         
         
