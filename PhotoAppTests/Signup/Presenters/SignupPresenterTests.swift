@@ -62,4 +62,17 @@ class SignupPresenterTests: XCTestCase {
         // Assert
         XCTAssertTrue(mockSignupWebService.isSignupMethodCalled, "The signup() method was not called in the SignupWebService class")
     }
+    
+    func testSignupPresenter_WhenSignupOperationSuccessful_CallsSuccessOnViewDelegate() {
+        // Arrange
+        let myExpectation = expectation(description: "Expected the successfulSignup() method to be called")
+        let mockSignupViewDelegate = MockSignupViewDelegate()
+        mockSignupViewDelegate.expectation = myExpectation
+        
+        // Act
+        sut.processUserSignup(formModel: signupFormModel)
+        self.wait(for: [myExpectation], timeout: 5)
+        
+        // Assert
+    }
 }
