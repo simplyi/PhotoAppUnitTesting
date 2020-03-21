@@ -15,6 +15,7 @@ class SignupPresenterTests: XCTestCase {
     var mockSignupModelValidator: MockSignupModelValidator!
     var mockSignupWebService: MockSignupWebService!
     var sut: SignupPresenter!
+    var mockSignupViewDelegate: MockSignupViewDelegate!
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -25,7 +26,11 @@ class SignupPresenterTests: XCTestCase {
                                               repeatPassword:"12345678")
         mockSignupModelValidator = MockSignupModelValidator()
         mockSignupWebService = MockSignupWebService()
-        sut = SignupPresenter(formModelValidator: mockSignupModelValidator, webservice: mockSignupWebService)
+        mockSignupViewDelegate = MockSignupViewDelegate()
+        sut = SignupPresenter(formModelValidator: mockSignupModelValidator,
+                              webservice: mockSignupWebService,
+                              delegate: mockSignupViewDelegate
+        )
     }
 
     override func tearDown() {
@@ -66,7 +71,7 @@ class SignupPresenterTests: XCTestCase {
     func testSignupPresenter_WhenSignupOperationSuccessful_CallsSuccessOnViewDelegate() {
         // Arrange
         let myExpectation = expectation(description: "Expected the successfulSignup() method to be called")
-        let mockSignupViewDelegate = MockSignupViewDelegate()
+        
         mockSignupViewDelegate.expectation = myExpectation
         
         // Act
@@ -74,5 +79,6 @@ class SignupPresenterTests: XCTestCase {
         self.wait(for: [myExpectation], timeout: 5)
         
         // Assert
+        XCTAssertEqual(mockSignupViewDelegate.successfulSignupCounter, 1)
     }
 }
