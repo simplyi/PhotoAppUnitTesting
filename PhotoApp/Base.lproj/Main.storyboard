@@ -50,8 +50,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="iel-ah-UV0" id="k6j-nM-tET"/>
-                        <outlet property="firstNameTextField" destination="luA-8z-L0k" id="8Bp-Sa-ccp"/>
+                        <outlet property="emailTextField" destination="iel-ah-UV0" id="Wl7-Em-Anp"/>
+                        <outlet property="firstNameTextField" destination="luA-8z-L0k" id="XaU-NS-Yh9"/>
                         <outlet property="lastNameTextField" destination="xnD-Fw-trU" id="cW0-JU-aR7"/>
                         <outlet property="passwordTextField" destination="iMw-0h-8sr" id="46k-K2-R0k"/>
                         <outlet property="repeatPasswordTextField" destination="KMu-Bz-cbX" id="28o-kt-CF8"/>
