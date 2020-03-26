@@ -57,7 +57,13 @@ class SignupViewControllerTests: XCTestCase {
     
     func testViewController_WhenSignupButtonTapped_InvokesSignupProcess() {
         // Arrange
-        let mockSignupPresenter = MockSignupPresenter()
+        let mockSignupModelValidator = MockSignupModelValidator()
+        let mockSignupWebService = MockSignupWebService()
+        let mockSignupViewDelegate = MockSignupViewDelegate()
+        
+        let mockSignupPresenter = MockSignupPresenter(formModelValidator: mockSignupModelValidator, webservice: mockSignupWebService, delegate: mockSignupViewDelegate)
+        
+        sut.signupPresenter = mockSignupPresenter
         
         // Act
         sut.signupButton.sendActions(for: .touchUpInside)
