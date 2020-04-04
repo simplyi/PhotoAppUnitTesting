@@ -34,10 +34,18 @@
 		94BC48AA2422D9A90072232B /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC48A92422D9A90072232B /* SignupPresenter.swift */; };
 		94BC48AC2422E06B0072232B /* MockSignupModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC48AB2422E06A0072232B /* MockSignupModelValidator.swift */; };
 		94BC48AE2423B9270072232B /* SignupModelValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC48AD2423B9270072232B /* SignupModelValidatorProtocol.swift */; };
+		94CA55AE2438BB53009CC224 /* PhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA55AD2438BB53009CC224 /* PhotoAppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9490D3E623F3015A00ABE2F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9490D3C723F3015900ABE2F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9490D3CE23F3015900ABE2F9;
+			remoteInfo = PhotoApp;
+		};
+		94CA55B02438BB53009CC224 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9490D3C723F3015900ABE2F9 /* Project object */;
 			proxyType = 1;
@@ -78,6 +86,9 @@
 		94BC48A92422D9A90072232B /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
 		94BC48AB2422E06A0072232B /* MockSignupModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupModelValidator.swift; sourceTree = "<group>"; };
 		94BC48AD2423B9270072232B /* SignupModelValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModelValidatorProtocol.swift; sourceTree = "<group>"; };
+		94CA55AB2438BB53009CC224 /* PhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94CA55AD2438BB53009CC224 /* PhotoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITests.swift; sourceTree = "<group>"; };
+		94CA55AF2438BB53009CC224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +100,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9490D3E223F3015A00ABE2F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94CA55A82438BB53009CC224 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -180,6 +198,7 @@
 			children = (
 				9490D3D123F3015900ABE2F9 /* PhotoApp */,
 				9490D3E823F3015A00ABE2F9 /* PhotoAppTests */,
+				94CA55AC2438BB53009CC224 /* PhotoAppUITests */,
 				9490D3D023F3015900ABE2F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -189,6 +208,7 @@
 			children = (
 				9490D3CF23F3015900ABE2F9 /* PhotoApp.app */,
 				9490D3E523F3015A00ABE2F9 /* PhotoAppTests.xctest */,
+				94CA55AB2438BB53009CC224 /* PhotoAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,6 +275,15 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		94CA55AC2438BB53009CC224 /* PhotoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94CA55AD2438BB53009CC224 /* PhotoAppUITests.swift */,
+				94CA55AF2438BB53009CC224 /* Info.plist */,
+			);
+			path = PhotoAppUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -293,13 +322,31 @@
 			productReference = 9490D3E523F3015A00ABE2F9 /* PhotoAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		94CA55AA2438BB53009CC224 /* PhotoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94CA55B42438BB53009CC224 /* Build configuration list for PBXNativeTarget "PhotoAppUITests" */;
+			buildPhases = (
+				94CA55A72438BB53009CC224 /* Sources */,
+				94CA55A82438BB53009CC224 /* Frameworks */,
+				94CA55A92438BB53009CC224 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94CA55B12438BB53009CC224 /* PBXTargetDependency */,
+			);
+			name = PhotoAppUITests;
+			productName = PhotoAppUITests;
+			productReference = 94CA55AB2438BB53009CC224 /* PhotoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9490D3C723F3015900ABE2F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Sergey Kargopolov";
 				TargetAttributes = {
@@ -309,6 +356,10 @@
 					9490D3E423F3015A00ABE2F9 = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
+						TestTargetID = 9490D3CE23F3015900ABE2F9;
+					};
+					94CA55AA2438BB53009CC224 = {
+						CreatedOnToolsVersion = 11.4;
 						TestTargetID = 9490D3CE23F3015900ABE2F9;
 					};
 				};
@@ -328,6 +379,7 @@
 			targets = (
 				9490D3CE23F3015900ABE2F9 /* PhotoApp */,
 				9490D3E423F3015A00ABE2F9 /* PhotoAppTests */,
+				94CA55AA2438BB53009CC224 /* PhotoAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -344,6 +396,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9490D3E323F3015A00ABE2F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94CA55A92438BB53009CC224 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -391,6 +450,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94CA55A72438BB53009CC224 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94CA55AE2438BB53009CC224 /* PhotoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -398,6 +465,11 @@
 			isa = PBXTargetDependency;
 			target = 9490D3CE23F3015900ABE2F9 /* PhotoApp */;
 			targetProxy = 9490D3E623F3015A00ABE2F9 /* PBXContainerItemProxy */;
+		};
+		94CA55B12438BB53009CC224 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9490D3CE23F3015900ABE2F9 /* PhotoApp */;
+			targetProxy = 94CA55B02438BB53009CC224 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -614,6 +686,44 @@
 			};
 			name = Release;
 		};
+		94CA55B22438BB53009CC224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsdeveloperblog.tutorials.PhotoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoApp;
+			};
+			name = Debug;
+		};
+		94CA55B32438BB53009CC224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsdeveloperblog.tutorials.PhotoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoApp;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -640,6 +750,15 @@
 			buildConfigurations = (
 				9490D3F223F3015A00ABE2F9 /* Debug */,
 				9490D3F323F3015A00ABE2F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94CA55B42438BB53009CC224 /* Build configuration list for PBXNativeTarget "PhotoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94CA55B22438BB53009CC224 /* Debug */,
+				94CA55B32438BB53009CC224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
