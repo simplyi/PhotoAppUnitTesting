@@ -34,7 +34,7 @@
 		94BC48AA2422D9A90072232B /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC48A92422D9A90072232B /* SignupPresenter.swift */; };
 		94BC48AC2422E06B0072232B /* MockSignupModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC48AB2422E06A0072232B /* MockSignupModelValidator.swift */; };
 		94BC48AE2423B9270072232B /* SignupModelValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC48AD2423B9270072232B /* SignupModelValidatorProtocol.swift */; };
-		94CA55AE2438BB53009CC224 /* PhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA55AD2438BB53009CC224 /* PhotoAppUITests.swift */; };
+		94CA55AE2438BB53009CC224 /* SignupFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA55AD2438BB53009CC224 /* SignupFlowUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +87,7 @@
 		94BC48AB2422E06A0072232B /* MockSignupModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupModelValidator.swift; sourceTree = "<group>"; };
 		94BC48AD2423B9270072232B /* SignupModelValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModelValidatorProtocol.swift; sourceTree = "<group>"; };
 		94CA55AB2438BB53009CC224 /* PhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		94CA55AD2438BB53009CC224 /* PhotoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITests.swift; sourceTree = "<group>"; };
+		94CA55AD2438BB53009CC224 /* SignupFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFlowUITests.swift; sourceTree = "<group>"; };
 		94CA55AF2438BB53009CC224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -278,7 +278,7 @@
 		94CA55AC2438BB53009CC224 /* PhotoAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				94CA55AD2438BB53009CC224 /* PhotoAppUITests.swift */,
+				94CA55AD2438BB53009CC224 /* SignupFlowUITests.swift */,
 				94CA55AF2438BB53009CC224 /* Info.plist */,
 			);
 			path = PhotoAppUITests;
@@ -454,7 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94CA55AE2438BB53009CC224 /* PhotoAppUITests.swift in Sources */,
+				94CA55AE2438BB53009CC224 /* SignupFlowUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
