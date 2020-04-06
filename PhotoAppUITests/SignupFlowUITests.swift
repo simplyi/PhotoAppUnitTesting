@@ -28,12 +28,12 @@ class SignupFlowUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        let firstName = app.textFields["First name:"]
-        let lastName = app.textFields["Last name:"]
-        let email = app.textFields["Email:"]
-        let password = app.secureTextFields["Password:"]
-        let repeatPassword = app.secureTextFields["Repeat password:"]
-        let signupButton = app.buttons["Signup"]
+        let firstName = app.textFields["firstNameTextField"]
+        let lastName = app.textFields["lastNameTextField"]
+        let email = app.textFields["emailAddressTextField"]
+        let password = app.secureTextFields["passwordTextField"]
+        let repeatPassword = app.secureTextFields["repeatPasswordTextField"]
+        let signupButton = app.buttons["signupButton"]
                 
         XCTAssertTrue(firstName.isEnabled, "First name UITextField is not enabled for user interactions")
         XCTAssertTrue(lastName.isEnabled, "Last name UITextField is not enabled for user interactions")
