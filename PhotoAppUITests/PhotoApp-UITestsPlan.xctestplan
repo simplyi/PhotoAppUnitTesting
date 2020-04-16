@@ -36,14 +36,6 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:PhotoApp.xcodeproj",
-        "identifier" : "9490D3E423F3015A00ABE2F9",
-        "name" : "PhotoAppTests"
-      }
-    },
-    {
       "target" : {
         "containerPath" : "container:PhotoApp.xcodeproj",
         "identifier" : "94CA55AA2438BB53009CC224",
