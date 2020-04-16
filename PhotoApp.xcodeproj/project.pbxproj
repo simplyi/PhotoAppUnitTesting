@@ -72,6 +72,7 @@
 		946ACFAC242950D10001A01B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		9471F55C2410074B0003BD16 /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
 		9471F55E2410089F0003BD16 /* SignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebService.swift; sourceTree = "<group>"; };
+		948C5E3E2448AD15002E7DCC /* PhotoApp-UITestsPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UITestsPlan.xctestplan"; sourceTree = "<group>"; };
 		9490D3CF23F3015900ABE2F9 /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9490D3D223F3015900ABE2F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9490D3D423F3015900ABE2F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -278,6 +279,7 @@
 		94CA55AC2438BB53009CC224 /* PhotoAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				948C5E3E2448AD15002E7DCC /* PhotoApp-UITestsPlan.xctestplan */,
 				94CA55AD2438BB53009CC224 /* SignupFlowUITests.swift */,
 				94CA55AF2438BB53009CC224 /* Info.plist */,
 			);
